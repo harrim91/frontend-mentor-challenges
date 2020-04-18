@@ -143,8 +143,12 @@ p.copy:last-of-type {
     margin-top: 1.5rem;
   }
 
+  .button-cta:hover {
+    opacity: 0.95;
+    cursor: pointer;
+  }
+
   .copy {
-    /* font-size: 1rem; */
     line-height: 1.25rem;
   }
 
