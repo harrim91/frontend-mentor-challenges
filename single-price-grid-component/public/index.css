@@ -1,11 +1,13 @@
 @font-face {
   font-family: "Karla";
-  src: url("./fonts/Karla/Karla-Regular.ttf") format("truetype")
+  src: url("./fonts/Karla/Karla-Regular.ttf") format("truetype");
+  font-display: swap;
 }
 
 @font-face {
   font-family: "Karla Bold";
-  src: url("./fonts/Karla/Karla-Bold.ttf") format("truetype")
+  src: url("./fonts/Karla/Karla-Bold.ttf") format("truetype");
+  font-display: swap;
 }
 
 :root {
