@@ -18,6 +18,7 @@
   --lightGrayishBlue: hsl(220, 16%, 96%);
   --veryLightGray: hsl(0, 0%, 98%);
   --white: hsl(0, 0%, 100%);
+  --highlight: #30c698;
   font-size: 14px;
 }
 
@@ -255,6 +256,37 @@ ul.footer-links {
   justify-content: space-evenly;
 }
 
+.social-icon {
+  height: 21px;
+  width: 21px;
+  background-color: var(--white);
+}
+
+#social-icon-facebook {
+  mask: url('../images/icon-facebook.svg') no-repeat at center / contain;
+  -webkit-mask: url('../images/icon-facebook.svg') no-repeat center / contain;
+}
+
+#social-icon-youtube {
+  mask: url('../images/icon-youtube.svg') no-repeat center / contain;
+  -webkit-mask: url('../images/icon-youtube.svg') no-repeat center / contain;
+}
+
+#social-icon-pinterest {
+  mask: url('../images/icon-pinterest.svg') no-repeat center / contain;
+  -webkit-mask: url('../images/icon-pinterest.svg') no-repeat center / contain;
+}
+
+#social-icon-instagram {
+  mask: url('../images/icon-instagram.svg') no-repeat center / contain;
+  -webkit-mask: url('../images/icon-instagram.svg') no-repeat center / contain;
+}
+
+#social-icon-twitter {
+  mask: url('../images/icon-twitter.svg') no-repeat center / contain;
+  -webkit-mask: url('../images/icon-twitter.svg') no-repeat center / contain;
+}
+
 .copyright {
   font-size: 0.8rem;
 }
@@ -283,7 +315,7 @@ ul.footer-links {
 
   .header {
     justify-content: space-between;
-    padding: 9px 126px;
+    padding: 0 126px;
     position: relative;
     width: initial;
   }
@@ -291,6 +323,10 @@ ul.footer-links {
   .request-button:hover,
   .navigation-item:hover {
     cursor: pointer;
+  }
+
+  .request-button:hover {
+    opacity: 0.8;
   }
 
   .request-button,
@@ -317,7 +353,7 @@ ul.footer-links {
   #intro-section {
     display: flex;
     flex-direction: row-reverse;
-    min-height: 620px;
+    min-height: 632px;
   }
 
   #intro-section > .banner {
@@ -427,5 +463,26 @@ ul.footer-links {
 
   #footer-section-invite {
     text-align: right;
+  }
+
+  .navigation-item:hover,
+  .social-icon:hover,
+  .footer-links > li:hover {
+    cursor: pointer;
+  }
+
+  .navigation-item:hover {
+    color: var(--darkBlue);
+    box-shadow: inset 0px -3px 0 var(--highlight);
+  }
+
+  .article-content > .title:hover,
+  .footer-links > li:hover {
+    cursor: pointer;
+    color: var(--highlight);
+  }
+
+  .social-icon:hover {
+    background-color: var(--highlight);
   }
 }
