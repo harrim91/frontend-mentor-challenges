@@ -51,6 +51,10 @@ main {
   flex-direction: column;
 }
 
+button {
+  outline-color: var(--grayishBlue);
+}
+
 .header {
   align-items: center;
   background-color: var(--white);
