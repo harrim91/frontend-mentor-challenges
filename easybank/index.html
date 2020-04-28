@@ -18,25 +18,28 @@
 
   <link rel="stylesheet" type="text/css" href="css/index.css">
 
+  <script src="src/index.js" type="text/javascript" defer></script>
+
   <title>Frontend Mentor | Easybank landing page</title>
 </head>
 <body>
+  <div class="backdrop" id="navigation-menu-backdrop"></div>
   <header class="header">
     <img alt="logo" class="logo" src="images/logo.svg" />
 
-    <button class="hamburger-button" aria-label="Navigation Menu">
+    <button class="hamburger-button" id="mobile-navigation-button" aria-label="Navigation Menu">
       <div class="hamburger-line hamburger-line--top"></div>
       <div class="hamburger-line hamburger-line--middle"></div>
       <div class="hamburger-line hamburger-line--bottom"></div>
     </button>
 
-    <nav class="nav">
+    <nav class="nav" id="navigation-menu">
       <ul>
-        <li>Home</li>
-        <li>About</li>
-        <li>Contact</li>
-        <li>Blog</li>
-        <li>Careers</li>
+        <li class="navigation-item">Home</li>
+        <li class="navigation-item">About</li>
+        <li class="navigation-item">Contact</li>
+        <li class="navigation-item">Blog</li>
+        <li class="navigation-item">Careers</li>
       </ul>
     </nav>
 
